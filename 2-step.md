@@ -86,3 +86,5 @@ Object.keys(element.props)
 အခုဆိုရင်တော့ ကျွန်တော်တိုကိုယ်ပိုင် JSX render လုပ်နိုင်မယ့် Library တစ်ခုတော့ရခဲ့ပါပြီ။
 
 Try ကြည့်လိုရပါတယ်ဗျ။
+
+စမ်းသပ်ချင်တယ်ဆိုရင်တော့ Repo clone လုပ်ပြီး example folder ထဲမယ် yarn && yarn start လုပ်ပြီး စမ်းနိုင်ပါတယ်။
