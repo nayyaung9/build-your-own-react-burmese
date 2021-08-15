@@ -37,10 +37,9 @@ function performUnitOfWork(nextUnitOfWork) {
 
 ဆိုတော့ ကျွန်တော်တိုက ဒီ render process ကို small units လေးတွေအဖြစ် ပြောင်းလဲပြီး အလုပ်လုပ်ခိုင်းမယ်။ unit တစ်ခုပြီးတိုင်း browser ကိုလုပ်စရာရှိတာ ဆက်လုပ်ခိုင်းပြီး render process နဲ့ တစ်လှည့်စီ ပြန် run ပါမယ်။
 
-requestIdleCallback ကိုသုံးပြီး loop လုပ်မယ်။ requestIdleCallback ကို setTimeout function လိုမှတ်ယူနိုင်ပါတယ်။ main thread က လုပ်စရာဘာမှမရှိတဲ့အချိန် browser က ဒီ callback ကို run လိမ့်မယ်။
+requestIdleCallback ကိုသုံးပြီး loop လုပ်မယ်။ requestIdleCallback ကို setTineout function လိုမှတ်ယူနိုင်ပါတယ်။ main thread က လုပ်စရာဘာမှမရှိတဲ့အချိန် render process ကို ပြန်ခေါ်ပြီး run ပါမယ်။
 
 React ကတော့ requestIdleCallback ကိုမသုံးတော့ပါဘူး၊ သူတိုက schedular package ကိုသုံးထားပါတယ်။ သဘောတရားကတော့ အတူတူပါပဲ။
-
 
 requestIdleCallback function ကနေ deadline ဆိုတဲ့ parameter တစ်ခုရရှိပါမယ်။ အဲ့တာကိုသုံးပြီးတော့ browser main thread ပြန်အလုပ်လုပ်ဖို အချိန်ဘယ်လောက်ရှိမလဲဆိုတာ တွက်နိုင်ပါတယ်။
 
